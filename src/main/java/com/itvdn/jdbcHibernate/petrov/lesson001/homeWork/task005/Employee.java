@@ -18,18 +18,12 @@ public class Employee {
     }
 
     public Employee(String firstName, String middleName, String lastName, String phone, String address) {
-        this.firstName = firstName;
-        this.middleName = middleName;
-        this.lastName = lastName;
-        this.phone = phone;
+        this(firstName, middleName, lastName, phone);
         this.address = address;
     }
 
     public Employee(String firstName, String middleName, String lastName, String phone, Date birthDay) {
-        this.firstName = firstName;
-        this.middleName = middleName;
-        this.lastName = lastName;
-        this.phone = phone;
+        this(firstName, middleName, lastName, phone);
         this.birthDay = birthDay;
     }
 
