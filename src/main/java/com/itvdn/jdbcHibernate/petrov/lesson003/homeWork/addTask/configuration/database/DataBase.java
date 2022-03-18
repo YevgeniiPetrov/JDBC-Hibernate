@@ -14,7 +14,7 @@ import java.util.List;
 public class DataBase {
     private static SessionFactory sessionFactory;
 
-    private static SessionFactory getSessionFactory() {
+    public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             sessionFactory = new Configuration()
                     .configure()

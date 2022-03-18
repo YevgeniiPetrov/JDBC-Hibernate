@@ -13,7 +13,7 @@ import com.itvdn.jdbcHibernate.petrov.lesson003.homeWork.addTask.entity.Animal;
 
 public class Main {
     public static void main(String[] args) {
-        Animal animal = new Animal()
+        Animal animal = Animal
                 .builder()
                 .age(10)
                 .name("Murzik")
@@ -22,9 +22,5 @@ public class Main {
         DAOFactory DAOFactory = new DAOFactoryImpl();
         AnimalDAO animalDAO = DAOFactory.getAnimalDAO();
         animalDAO.add(animal);
-        animal.setAge(20);
-        animalDAO.update(animal);
-        //System.out.println(animalDAO.delete(animal));
-        System.out.println(animalDAO.get(20));
     }
 }
