@@ -18,5 +18,15 @@ public class MyAnimal {
     private int age;
     private String name;
     private boolean tail;
+
+    @Override
+    public String toString() {
+        return "MyAnimal{" +
+                "id=" + id +
+                ", age=" + age +
+                ", name='" + name + '\'' +
+                ", tail=" + tail +
+                '}';
+    }
 }
 

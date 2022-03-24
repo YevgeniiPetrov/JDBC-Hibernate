@@ -24,5 +24,6 @@ public class Main {
         animalDAO.add(myAnimal);
         myAnimal.setAge(20);
         animalDAO.update(myAnimal);
+        System.out.println(animalDAO.getAll());
     }
 }

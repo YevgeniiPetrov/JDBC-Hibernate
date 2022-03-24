@@ -51,7 +51,7 @@ public class DataBase {
     public static <T> List<T> getAll(Class<T> type) {
         EntityManager entityManager = getEntityManagerFactory().createEntityManager();
         entityManager.getTransaction().begin();
-        Query query = entityManager.createQuery("from " + type.toString());
+        Query query = entityManager.createQuery("from " + type.getSimpleName());
         List<T> list = query.getResultList();
         entityManager.getTransaction().commit();
         return list;
